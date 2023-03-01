@@ -1,2 +1,3 @@
-# instancio-jpms-tests
-Instancio JPMS Tests
+# Instancio JPMS Tests
+
+Smoke tests using JPMS modules.
