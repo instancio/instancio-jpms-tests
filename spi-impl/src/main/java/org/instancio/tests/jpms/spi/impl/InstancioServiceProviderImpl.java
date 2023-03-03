@@ -1,4 +1,4 @@
-package org.instancio.tests.jpms.spi;
+package org.instancio.tests.jpms.spi.impl;
 
 import org.instancio.Random;
 import org.instancio.generator.Generator;
@@ -8,9 +8,9 @@ public class InstancioServiceProviderImpl implements InstancioServiceProvider {
 
     @Override
     public GeneratorProvider getGeneratorProvider() {
-        return forClass -> {
-            if (forClass == String.class) {
-                return SpiStringGenerator.class;
+        return (node, gen) -> {
+            if (node.getTargetClass() == String.class) {
+                return new SpiStringGenerator();
             }
             return null;
         };

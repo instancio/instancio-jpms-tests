@@ -6,8 +6,7 @@ module org.instancio.tests.jpms.spi {
     requires org.junit.jupiter.api;
     requires org.junit.jupiter.engine;
 
-    provides org.instancio.spi.InstancioServiceProvider
-            with org.instancio.tests.jpms.spi.InstancioServiceProviderImpl;
+    uses org.instancio.spi.InstancioServiceProvider;
 
     opens org.instancio.tests.jpms.spi;
 }

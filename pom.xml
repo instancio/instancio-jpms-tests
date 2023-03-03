@@ -19,6 +19,7 @@
 
     <modules>
         <module>standalone-tests</module>
+        <module>spi-impl</module>
         <module>spi-tests</module>
         <module>bean-validation-jakarta-tests</module>
         <module>bean-validation-hibernate-tests</module>
@@ -26,6 +27,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.instancio</groupId>
+                <artifactId>instancio-core</artifactId>
+                <version>${version.instancio}</version>
+                <scope>test</scope>
+            </dependency>
             <dependency>
                 <groupId>org.instancio</groupId>
                 <artifactId>instancio-junit</artifactId>
