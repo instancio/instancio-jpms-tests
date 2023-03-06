@@ -11,7 +11,7 @@
     <properties>
         <version.assertj>3.24.2</version.assertj>
         <version.hibernate.validator>8.0.0.Final</version.hibernate.validator>
-        <version.instancio>2.10.1-SNAPSHOT</version.instancio>
+        <version.instancio>2.11.1-SNAPSHOT</version.instancio>
         <version.jakarta.validation>3.0.2</version.jakarta.validation>
         <version.junit>5.9.2</version.junit>
         <version.logback>1.2.11</version.logback>
